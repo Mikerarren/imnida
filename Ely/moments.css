@@ -1,0 +1,57 @@
+/* Modal styles */
+body {
+    font-family: 'Bubblegum Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url('C:/Users/Mike/Downloads/photos/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 1px;
+    right: 200px;
+    top: 0;
+    width: 50%; /* Adjust width to fit left side */
+    height: 100%;
+    overflow: auto;
+    padding: 20px; /* Optional: Adjust padding as needed */
+    box-sizing: border-box; /* Ensures padding is included in width/height calculation */
+    text-align: left;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    width: 90%; /* Adjust width percentage */
+    max-width: 320px; /* Maximum width based on video's width */
+    max-height: 568px; /* Maximum height based on video's height */
+    background-color: #fefefe;
+    padding: 20px; /* Optional: Adjust padding as needed */
+    box-sizing: border-box; /* Ensures padding is included in width/height calculation */
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff; /* Adjust close button color */
+}
+
+#modalVideo {
+    width: 100%; /* Ensure video fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
